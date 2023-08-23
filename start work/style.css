@@ -1,0 +1,878 @@
+body{
+    background-color: #F4F5F7;
+    height: 100vh;
+    font-family: Lalezar;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+.made{
+    font-size: 10px;
+    color: #4551ff;
+}
+
+.user a{
+    color: black;
+}
+
+.col-left{
+    display: flex;
+    gap: 2.125em;
+    font-size: 16px;
+    align-items: center;
+}
+
+.search{
+    margin-left: 86px;
+}
+
+.icons{
+    width: 23px;
+    height: 23px;
+}
+
+.logo{
+    width: 130px;
+    height: 50px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 156px;
+    justify-content: space-between;
+}
+
+.open {
+    height: 8px;
+}
+
+nav a {
+    height: 20px;
+    width: 65px;
+}
+
+.user {
+    width: 258px;
+}
+
+/* Start With Laptop */
+
+/* row1 */
+
+/* First, I wrote for all rows: margin-left: 7em; (There are comments now)
+Then I thought to myself, is there a better way? 
+Then I realized that I can put all the rows in a container and then write for it: display: flex;
+align-items: center;*/
+
+.rows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1 {
+    display: flex;
+    /* margin-left: 7em; */
+}
+
+.row1 img{
+    width: 633px;
+    height: 575px;
+}
+
+.text {
+    width: 421px;
+    height: 280px;
+    text-align: right;
+}
+
+.text h1 {
+    font-size: 54px;
+}
+
+.text p { 
+    height: 186px;
+    color: #A8AEB9;
+    text-align: right;
+    font-family: Lalezar;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+aside ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+aside ul li {
+    list-style-type: none;
+}
+
+.row1-btn {
+    display: inline-flex;
+    border: none;
+    border-radius: 10px;
+    background: #4A6DFB;
+    padding: 10px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-color, #F4F5F7);
+    text-align: center;
+    font-size: 24px;
+    font-family: inherit;
+}
+
+/* row2 - Cards*/
+
+.row2{
+    display: flex;
+    margin-top: 203px;
+    /* margin-left: 7em; */
+    gap: 45px;
+}
+.row2 a{
+    display: flex;
+    width: 196px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #72748E;
+    text-align: center;
+    /* Normal text */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Math, .teacher, .developer, .development{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 7px 7px 14px rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.row2 img {
+    width: 220px;
+    height: 200px;
+}
+
+/* row3 */
+
+.row3 {
+    display: flex;
+    margin-top: 186px;
+    /* margin-left: 7em; */
+}
+
+.row3 img{
+    width: 633px;
+    height: 540px;
+}
+
+.row3-btn {
+    width: 177px;
+    height: 43px;
+    display: inline-flex;
+    border: none;
+    border-radius: 10px;
+    background: #4A6DFB;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-color, #F4F5F7);
+    text-align: center;
+    font-size: 24px;
+    font-family: inherit;
+}
+
+/* row4 */
+
+.row4 {
+    display: flex;
+    /* margin-left: 7em; */
+    flex-direction: row-reverse;
+}
+
+.row4 img{
+    width: 633px;
+    height: 540px;
+}
+
+/* row6 - User Comments */
+
+.comment{
+    color: var(--main-heading-color, #2A2D53);
+    text-align: center;
+    /* h2 */
+    font-family: Lalezar;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+}
+
+/* row7 - Learn With Animation */
+
+.animation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.animation h2{
+    color: var(--main-heading-color, #2A2D53);
+    text-align: center;
+    /* h2 */
+    font-family: Lalezar;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texts {
+    width: 1017px;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    height: 78px;
+}
+
+.texts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 227px;
+    height: 70px;
+    background-color: rgb(255, 255, 255, 1);
+    box-shadow: 15px 14px 24px 0px rgba(0, 0, 0, 0.08);
+    margin-left: 2px;
+    border-radius: 20px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.animation img{
+    width: 497px;
+    height: 373px;
+    margin-top: 230px;
+}
+
+/* Footer */
+
+.footer {
+    background: url(assets/footer.png);
+    background-size: cover;
+}
+
+.columns {
+    width: 965.707px;
+    height: 366.494px;
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+}
+
+.left-col{
+    height: 46px;
+    margin-right: 44em;
+}
+
+.connection-ways {
+    margin-top: 114px;
+    display: flex;
+    gap: 44px;
+    justify-content: end;
+    width: fit-content;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 35px;
+    margin-top: 109px;
+}
+
+.right-col a {
+    color: #72748E;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media Query - Mobile */
+
+@media only screen and (max-width: 480px) {
+    .hide-mobile, .logo{
+        display: none;
+    }
+    .col-left{
+        gap: 12px;
+    }
+    .search{
+        margin-left: 36px;
+    }
+    .user {
+        width: 232px;
+    }
+
+    .menu{
+        width: fit-content;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 999;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background: rgb(199, 199, 199);
+        width: 40%;
+        padding: 3em;
+        text-align: right;
+        transition: transform .6s,;
+        transform: translateX(100%);
+      }
+      
+      aside a {
+        font-size: 2.6rem;
+      }
+      
+      aside img {
+        background: rgb(255, 255, 255);
+        width: 30px;
+        height: 30px;
+        border-radius: .3em;
+        cursor: pointer;
+      }
+      
+      aside ul {
+        display: block;
+        margin-top: 2em;
+      }
+      
+      aside ul li {
+        margin-bottom: 1.5em;
+        list-style-type: none;
+      }
+      
+      aside ul li a {
+        color: rgb(0, 0, 0);
+        font-size: 2.4rem;
+      }
+
+    .row1, .row3, .row4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .row1 img, .row3 img, .row4 img, .box img{
+        width: 410px;
+        height: 378px;
+    }
+    .row1 p, .row3 p, .row4 p{
+        height: 80px;
+        width: 410px;
+    }
+    .text, .text p, .text h1{
+        text-align: center;
+    }
+    nav {
+        margin-bottom: 75px;
+    }
+    .row2 {
+        flex-direction: column;
+    }
+    .texts{
+        width: 250px;
+        margin-bottom: 500px;
+    }
+    .footer{
+        background: url(assets/back-ground-with-mobile.png);
+        width: 300px;
+        height: 75px;
+    }
+
+    .left-col{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 75px;
+        margin: 0;
+    }
+
+    .columns{
+        width: 300px;
+        height: 75px;
+        margin: 0;
+    }
+
+    .connection-ways{
+        margin-top: 50px;
+    }
+    .comment img{
+        width: 368px;
+        height: 152px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+}
+
+/* Media Query - Tablet(only Portrait) */
+        
+@media only screen and (min-width: 481px) {
+        
+    .hide-tablet{
+        display: none;
+    }
+
+    .col-left{
+        gap: 5px;
+    }
+    .search{
+        margin-left: 30px;
+    }
+    .user {
+        width: 190px;
+    }
+    .row1, .row3, .row4{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .row3 img, .row4 img, .box img{
+        width: 338px;
+        height: 340px;
+        margin-left: 40px;
+    }
+
+    .row1 img {
+        height: 316px;
+        width: 314px;
+        margin: 0 0 0 25px;
+    }
+
+    .row1 p, .row3 p, .row4 p{
+        height: 80px;
+        width: 410px;
+    }
+    .text, .text p, .text h1{
+        text-align: right;
+        margin-right: 30px;
+    }
+
+    .row4 .text {
+        margin-right: -60px;
+    }
+    .row3 .text{
+        margin-right: 60px;
+    }
+
+    nav {
+        margin-bottom: 75px;
+    }
+
+    .Math img, .teacher img, .developer img, .development img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Math, .teacher, .developer, .development {
+        width: 151px;
+        height: 157px;
+    }
+
+    .comment img {
+        width: 650px;
+        margin-bottom: 176px;
+    }
+
+    .texts {
+        width: 654px;
+        display: flex;
+        gap: 18px 33px;
+        flex-wrap: wrap;
+        height: 78px;
+    }    
+
+    .texts a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 46px;
+        background-color: rgb(255, 255, 255, 1);
+        box-shadow: 15px 14px 24px 0px rgba(0, 0, 0, 0.08);
+        margin-left: 2px;
+        border-radius: 10px;
+    }
+    .footer {
+        background: url(assets/footer.png);
+        background-size: cover;
+    }
+    
+    .columns {
+        width: 650px;
+        height: 268px;
+        display: flex;
+        align-items: center;
+        margin-left: 13px;
+    }
+    
+    .left-col{
+        height: 58px;
+        margin-right: 26em;
+    }
+    
+    .connection-ways {
+        margin-top: 70px;
+        display: flex;
+        gap: 44px;
+        justify-content: end;
+        width: fit-content;
+    }
+    
+    .right-col {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        gap: 35px;
+        margin-top: 59px;
+    }
+    
+    .right-col a {
+        color: #72748E;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    .animation h3{
+        font-size: 30px;
+    }
+}
+
+/* Media Query - Laptops and tablets(Landscape) */
+
+@media only screen and (min-width: 769px) {     
+
+    .hide-tablet{
+        display: none;
+    }
+
+    .col-left{
+        display: flex;
+        gap: 2.125em;
+        font-size: 16px;
+        align-items: center;
+    }
+    
+    .search{
+        margin-left: 86px;
+    }
+    
+    .icons{
+        width: 23px;
+        height: 23px;
+    }
+    
+    .logo{
+        width: 130px;
+        height: 50px;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        margin-bottom: 156px;
+        justify-content: space-between;
+    }
+    
+    .open {
+        height: 8px;
+    }
+    
+    nav a {
+        height: 20px;
+        width: 65px;
+    }
+    
+    .user {
+        width: 258px;
+    }
+    
+    .rows{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .row1 {
+        display: flex;
+    }
+    
+    .row1 img{
+        width: 633px;
+        height: 575px;
+    }
+    
+    .text {
+        width: 421px;
+        height: 280px;
+        text-align: right;
+    }
+    
+    .text h1 {
+        font-size: 54px;
+    }
+    
+    .text p { 
+        height: 186px;
+        color: #A8AEB9;
+        text-align: right;
+        font-family: Lalezar;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    
+    }
+    
+    .row1-btn {
+        display: inline-flex;
+        border: none;
+        border-radius: 10px;
+        background: #4A6DFB;
+        padding: 10px 80px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--main-color, #F4F5F7);
+        text-align: center;
+        font-size: 24px;
+        font-family: inherit;
+    }
+    
+    .row2{
+        display: flex;
+        margin-top: 203px;
+        gap: 45px;
+    }
+    .row2 a{
+        display: flex;
+        width: 196px;
+        height: 21px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #72748E;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .Math, .teacher, .developer, .development{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 7px 7px 14px rgba(0, 0, 0, .3);
+        border-radius: 20px;
+        gap: 20px;
+    }
+    
+    .row2 img {
+        width: 195px;
+        height: 177px;
+    }
+    
+    .row3 {
+        display: flex;
+        margin-top: 186px;
+    }
+    
+    .row3 img{
+        width: 633px;
+        height: 540px;
+    }
+    
+    .row3-btn {
+        width: 177px;
+        height: 43px;
+        display: inline-flex;
+        border: none;
+        border-radius: 10px;
+        background: #4A6DFB;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--main-color, #F4F5F7);
+        text-align: center;
+        font-size: 24px;
+        font-family: inherit;
+    }
+    
+    .row4 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .row4 img{
+        width: 633px;
+        height: 540px;
+    }
+    
+    .comment{
+        color: var(--main-heading-color, #2A2D53);
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        overflow: hidden;
+    }
+    
+    .animation {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .animation h2{
+        color: var(--main-heading-color, #2A2D53);
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .texts {
+        width: 1017px;
+        display: flex;
+        gap: 26px;
+        flex-wrap: wrap;
+        height: 78px;
+    }
+    
+    .texts a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 227px;
+        height: 70px;
+        background-color: rgb(255, 255, 255, 1);
+        box-shadow: 15px 14px 24px 0px rgba(0, 0, 0, 0.08);
+        margin-left: 2px;
+        border-radius: 20px;
+    }
+    
+    .box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .animation img{
+        width: 497px;
+        height: 373px;
+        margin-top: 230px;
+    }
+    
+    .footer {
+        background: url(assets/footer.png);
+        background-size: cover;
+    }
+    
+    .columns {
+        width: 965.707px;
+        height: 366.494px;
+        display: flex;
+        align-items: center;
+        margin-left: 13px;
+    }
+    
+    .left-col{
+        height: 46px;
+        margin-right: 44em;
+    }
+    
+    .connection-ways {
+        margin-top: 114px;
+        display: flex;
+        gap: 44px;
+        justify-content: end;
+        width: fit-content;
+    }
+    
+    .right-col {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        gap: 35px;
+        margin-top: 109px;
+    }
+    
+    .right-col a {
+        color: #72748E;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        font-size: 43px;
+    }
+}
+
+/* Media Query - for Computers and upper */
+
+@media only screen and (min-width: 1280px) {
+    /* I can't write this part😔. because i have not Computer and i need see the changes. But I also informed Mr.Rezagholi */
+}
+
